@@ -1,0 +1,20 @@
+- name: add ros repository
+  shell: >
+    /bin/bash -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list';
+    wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | apt-key add -;
+    apt-get update -o Acquire::ForceIPv4=true;
+- name: install ros
+  shell: >
+    apt-get install -y ros-indigo-desktop-full;
+- name: init rosdep
+  shell: >
+    rosdep init;
+    rosdep update;
+- name: setup env
+  shell: >
+    echo "source /opt/ros/indigo/setup.bash" >> /root/.bashrc;
+    /bin/bash -c "source /root/.bashrc";
+    /bin/bash -c "source /opt/ros/indigo/setup.bash";
+- name: install python-rosinstall
+  shell: >
+    apt-get install -y python-rosinstall;

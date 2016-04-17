@@ -1,0 +1,4 @@
+- name: add repository ppa:ubuntu-desktop/ubuntu-make
+  apt_repository: repo='ppa:ubuntu-desktop/ubuntu-make'
+- name: install ubuntu-make
+  apt: name=ubuntu-make

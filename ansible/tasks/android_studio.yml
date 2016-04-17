@@ -1,0 +1,8 @@
+- name: install android studio
+  shell: >
+    apt-get -y install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6 libc6-i386 lib32gcc1;
+    cd ~/src;
+    wget -t 1 https://dl.google.com/dl/android/studio/ide-zips/2.0.0.20/android-studio-ide-143.2739321-linux.zip -O android-studio.zip;
+    unzip android-studio.zip;
+    ln -s ~/src/android-studio/bin/studio.sh /usr/bin/android_studio.sh;
+    cd ~/;

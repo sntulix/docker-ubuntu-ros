@@ -1,0 +1,4 @@
+- name: install youtube-dl
+  shell: >
+    curl https://yt-dl.org/downloads/2016.03.18/youtube-dl -o /usr/local/bin/youtube-dl;
+    chmod a+rx /usr/local/bin/youtube-dl;

@@ -1,0 +1,5 @@
+- name: copy .ssh
+  shell: >
+    cp -pr /home/host_user/.ssh ~/;
+    chown -R root:root ~/.ssh;
+    chmod -R 600 ~/.ssh;

@@ -1,0 +1,6 @@
+- name: install ricty diminished font
+  shell: >
+    cd /usr/local/share/fonts;
+    wget -t 1 https://github.com/yascentur/RictyDiminished/archive/4.0.1.zip -O ricty_diminished.zip;
+    unzip -j ricty_diminished.zip;
+    cd ~/;

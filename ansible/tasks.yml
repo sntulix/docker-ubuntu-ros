@@ -1,0 +1,9 @@
+- include: tasks/copy_ssh.yml
+- include: tasks/packages_option.yml
+- include: tasks/genshin-font.yml
+- include: tasks/ricty_diminished-font.yml
+#- include: tasks/vscode.yml
+#- include: tasks/java8.yml
+#- include: tasks/android_studio.yml
+#- include: tasks/youtube-dl.yml
+#- include: tasks/alchemy.yml

@@ -1,0 +1,6 @@
+- name: install genshin font
+  shell: >
+    cd /usr/local/share/fonts;
+    wget -t 1 https://osdn.jp/downloads/users/8/8637/genshingothic-20150607.zip;
+    unzip genshingothic-20150607.zip;
+    cd ~/;

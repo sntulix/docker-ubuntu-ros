@@ -1,0 +1,9 @@
+---
+- hosts: 127.0.0.1
+  user: root
+  tasks:
+  - name: install cmake
+    apt: name=cmake
+  - name: install postgresql
+    apt: name=postgresql
+  - include: pb-copy_ssh.yml

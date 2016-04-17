@@ -1,0 +1,6 @@
+- name: install alchemy
+  shell: >
+    cd ~/src;
+    wget -t 1 http://al.chemy.org/files/Alchemy-008.tar.gz -O alchemy.tar.gz;
+    tar xvzf alchemy.tar.gz;
+    bash -c 'echo export PATH=\$PATH:$CLIENT_HOME/src/Alchemy' >> ~/.bashrc;
